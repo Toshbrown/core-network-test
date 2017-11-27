@@ -1,0 +1,50 @@
+{
+	"manifest-version": 1,
+
+	"name": "core-network-test",
+	"databox-type": "driver",
+	"version": "0.1.0",
+
+	"description": "An app test the core network.",
+	"author": "Tosh Brown <Anthony.Brown@nottingham.ac.uk>",
+	"license": "MIT",
+	"tags": [
+		"test",
+		"core-network"
+	],
+
+	"homepage": "https://github.com/me-box/core-network-test",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/me-box/core-network-test"
+	},
+
+	"packages": [
+		{
+			"name": "core-network-test",
+			"purpose": "Test the core network",
+			"install": "required",
+			"risks": "None.",
+			"benefits": "You can see how fast you can download!",
+			"datastores": [ ]
+		}
+	],
+	"allowed-combinations":[ ],
+	"datasources": [ ],
+
+	"export-whitelist": [ ],
+
+	"resource-requirements": {
+	},
+
+	"external-whitelist": [
+        {
+          "urls": [
+			"http://www.speedtest.net/",
+			"http://speedtest.net/",
+			"http://speedtest1.synergy-uk.com:8080/"
+		],
+          "description": "Used to test the bandwidth"
+		}
+	]
+}
